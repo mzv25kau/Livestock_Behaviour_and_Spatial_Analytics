@@ -1,8 +1,8 @@
 # Livestock Behaviour & Spatial Analytics: GPS Telemetry for Conservation
 ### Stakeholder Collaboration | MSc Dissertation Project
 
-[[Python], ](https://python.org)
-[[R], ](https://r-project.org)
+[[Python]](https://python.org)
+[[R]](https://r-project.org)
 [[QGIS]](https://qgis.org)
 
 ---
@@ -12,7 +12,7 @@ This repository contains the end-to-end data science pipeline developed in partn
 
 The methodologies established here deliver actionable geospatial intelligence to Trust land managers to mitigate land degradation, monitor grazing pressure hotspots, and safeguard fragile nature reserve biodiversity.
 
-> 📝 *Note: The core analytical frameworks built in this repository form the basis of a manuscript currently in preparation for submission to a peer-reviewed scientific journal.*
+> *Note: The core analytical frameworks built in this repository form the basis of a manuscript currently in preparation for submission to a peer-reviewed scientific journal.*
 
 ---
 
@@ -53,16 +53,16 @@ Using `GeoPandas`, raw points are transformed into density matrices. Custom spat
 ## Repository Structure
 
 ```text
-├── data/                    # Sample/mock data profiles (Raw telemetry data is masked)
 ├── notebooks/
-│   ├── 01_data_cleaning.ipynb   # Python preprocessing & feature engineering
-│   └── 02_spatial_mapping.ipynb # Folium interactive visualisations
+│   ├── 01_EDA_&_Cleaning.ipynb   # Python preprocessing & feature engineering
+│   ├── 02_Preprocessing_&_Initial_HMM.ipynb   # Python preprocessing & feature engineering
+│   ├── 03_data_cleaning.ipynb   # Python preprocessing & feature engineering
+│   └── 04_spatial_mapping.ipynb # Folium interactive visualisations
 ├── scripts/
-│   ├── 03_hmm_classification.R  # R script executing momentuHMM pipeline
+│   ├── 03_Final_HMM.R  # R script executing momentuHMM pipeline
 │   └── 04_glmm_drivers.R        # R script executing glmmTMB mixed models
-├── outputs/                 # Exported interactive HTML maps and publication graphics
-├── README.md                # Project documentation
-└── requirements.txt         # Python package dependencies
+├── outputs/                 # Exported publication maps and graphics
+└── README.md                # Project documentation
 ```
 
 ---
