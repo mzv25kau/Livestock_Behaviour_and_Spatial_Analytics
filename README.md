@@ -54,15 +54,16 @@ Using `GeoPandas`, raw points are transformed into density matrices. Custom spat
 
 ```text
 ├── notebooks/
-│   ├── 01_EDA_&_Cleaning.ipynb   # Python preprocessing & feature engineering
-│   ├── 02_Preprocessing_&_Initial_HMM.ipynb   # Python preprocessing & feature engineering
-│   ├── 03_data_cleaning.ipynb   # Python preprocessing & feature engineering
-│   └── 04_spatial_mapping.ipynb # Folium interactive visualisations
+│   ├── 01_EDA_&_Cleaning.ipynb                #
+│   ├── 02_Preprocessing_&_Initial_HMM.ipynb   # Python preprocessing
+│   ├── 04_Paddock-Agnostic_Metrics.ipynb      #
+│   └── 06_Additional_Graphics.ipynb           #
 ├── scripts/
-│   ├── 03_Final_HMM.R  # R script executing momentuHMM pipeline
-│   └── 04_glmm_drivers.R        # R script executing glmmTMB mixed models
-├── outputs/                 # Exported publication maps and graphics
-└── README.md                # Project documentation
+│   ├── 03_Final_HMM.R                         # R script executing momentuHMM pipeline
+│   └── 04_Predictive_models.R                 # R script executing predictive models (including glmmTMB mixed models)
+├── outputs/                                   # Exported publication maps and graphics
+│   └── ...                                    # Outputs to be uploaded after publishing
+└── README.md                                  # Project documentation
 ```
 
 ---
