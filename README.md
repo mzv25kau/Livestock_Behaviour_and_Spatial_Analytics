@@ -68,37 +68,6 @@ Using `GeoPandas`, raw points are transformed into density matrices. Custom spat
 
 ---
 
-## Getting Started
-
-### Prerequisites
-Ensure you have **Python 3.10+** and **R 4.3+** configured locally. 
-
-### Installation & Environment Setup
-1. Clone this repository:
-   ```bash
-   git clone https://github.com
-   cd livestock-spatial-analytics
-   ```
-
-2. Install Python dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Open R or RStudio and restore required libraries:
-   ```R
-   install.packages(c("tidyverse", "momentuHMM", "glmmTMB", "emmeans", "performance"))
-   ```
-
----
-
 ## Key Insights & Visualisations
 *   **Interactive Spatial Mapping:** The `notebooks/02_spatial_mapping.ipynb` file generates localised map layouts detailing exactly where livestock aggregate during critical foraging windows.
 *   **Stakeholder Analytics:** The `outputs/` directory provides pre-rendered statistical plots demonstrating how biological activity patterns adapt to local thermal conditions and vegetation density layouts.
-
----
-
-## ✉️ Contact & Collaboration
-*   **Author:** [Your Name]
-*   **Credentials:** MSc Data Science for Biology Graduate
-*   **Links:** [LinkedIn Profile](https://linkedin.com) | [GitHub Portfolio](https://github.com)
