@@ -1,13 +1,8 @@
-README to contain:
-A brief, non-technical summary of the project (use your optimized CV text!).
-A list of tools/packages used.
-Instructions on how to run the code.
-
 # Livestock Behaviour & Spatial Analytics: GPS Telemetry for Conservation
-### 🌿 Norfolk Wildlife Trust Collaboration | MSc Dissertation Project (Grade: Distinction)
+### Stakeholder Collaboration | MSc Dissertation Project
 
-[![Python](https://shields.io)](https://python.org)
-[![R](https://shields.io)](https://r-project.org)
+[Python](https://shields.io)](https://python.org)
+[R](https://shields.io)](https://r-project.org)
 [![QGIS](https://shields.io)](https://qgis.org)
 
 ---
