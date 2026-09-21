@@ -2,8 +2,8 @@
 ### Stakeholder Collaboration | MSc Dissertation Project
 
 [[Python]](https://python.org)
-[![R](https://shields.io)](https://r-project.org)
-[![QGIS](https://shields.io)](https://qgis.org)
+[[R]](https://r-project.org)
+[[QGIS]](https://qgis.org)
 
 ---
 
