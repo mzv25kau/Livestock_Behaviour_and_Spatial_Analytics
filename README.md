@@ -1,7 +1,7 @@
 # Livestock Behaviour & Spatial Analytics: GPS Telemetry for Conservation
 ### Stakeholder Collaboration | MSc Dissertation Project
 
-[![Python]](https://python.org)
+[[Python]](https://python.org)
 [![R](https://shields.io)](https://r-project.org)
 [![QGIS](https://shields.io)](https://qgis.org)
 
