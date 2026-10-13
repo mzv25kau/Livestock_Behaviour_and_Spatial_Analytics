@@ -10,7 +10,7 @@ library(momentuHMM)
 library(CircStats)
 library(circular)
 
-# Read in decoded behaviour state data.
+# Read in the processed data.
 processed_gps_data = read.csv("hmm_df.csv")
 
 # View data.
