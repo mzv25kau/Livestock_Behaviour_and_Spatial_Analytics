@@ -12,7 +12,7 @@ This repository contains the data science pipeline developed in partnership with
 
 The methodologies established here offer actionable geospatial information to land managers to mitigate land degradation, monitor grazing pressure hotspots, and safeguard fragile ecosystems.
 
-> *Note: The core analytical frameworks built in this repository form the basis of a manuscript currently in preparation for submission to a peer-reviewed scientific journal. Therefore, certain components of this repository (i.e. 'Outputs') will only be uploaded post-publishing.*
+> *Note: The core analytical frameworks built in this repository form the basis of a manuscript currently in preparation for submission to a peer-reviewed scientific journal. Therefore, certain components of this repository (i.e. `outputs/`) will only be uploaded post-publishing.*
 
 ---
 
