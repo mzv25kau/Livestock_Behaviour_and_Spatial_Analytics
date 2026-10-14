@@ -8,9 +8,9 @@
 ---
 
 ## Project Overview
-This repository contains the end-to-end data science pipeline developed in partnership with the **Norfolk Wildlife Trust**. The project decodes raw, unstructured GPS telemetry tracking data to identify latent livestock behaviours and map fine-scale habitat selection patterns. 
+This repository contains the data science pipeline developed in partnership with the Norfolk Wildlife Trust. The project decodes raw GPS telemetry tracking data to identify hidden livestock behaviours and map fine-scale habitat selection patterns using these decoded livestock behaviours. 
 
-The methodologies established here deliver actionable geospatial intelligence to Trust land managers to mitigate land degradation, monitor grazing pressure hotspots, and safeguard fragile nature reserve biodiversity.
+The methodologies established here offer actionable geospatial information to land managers to mitigate land degradation, monitor grazing pressure hotspots, and safeguard fragile ecosystems.
 
 > *Note: The core analytical frameworks built in this repository form the basis of a manuscript currently in preparation for submission to a peer-reviewed scientific journal.*
 
@@ -18,32 +18,31 @@ The methodologies established here deliver actionable geospatial intelligence to
 
 ## Data Stack & Core Libraries
 
-This project bridges the gap between R's advanced ecological statistical suites and Python's scalable geospatial processing pipelines:
-
 *   **R Ecosystem:** 
     *   `momentuHMM` – Multi-state Hidden Markov Modelling for time-series telemetry.
-    *   `glmmTMB` – Generalised Linear Mixed-Effects Models (GLMMs) handling zero-inflation.
-    *   `tidyverse` – Declarative data cleaning (`dplyr`), piping, and graphics (`ggplot2`).
+    *   `glmmTMB` – Generalised Linear Mixed-Effects Models (GLMMs).
+    *   `tidyverse` – Data cleaning (`dplyr`), and graphics (`ggplot2`).
 *   **Python Ecosystem:**
     *   `GeoPandas` & `Shapely` – Vector geometry processing, coordinate transformations, and spatial joins.
-    *   `hmmlearn` – Custom sequence validation and behavioural state checking.
-    *   `Folium` – Interactive HTML leaf maps for field exploration.
+    *   `hmmlearn` – Preliminary Hidden Markov Model.
+    *   `Folium` – Interactive HTML maps.
     *   `Pandas` & `NumPy` – Numerical transformations, feature engineering, and data wrangling.
 *   **GIS Application:**
-    *   `QGIS` – Spatial metric verification, raster extraction overlays, and publication-grade cartography.
+    *   `QGIS` – Raster overlays, and publication-grade cartography.
 
 ---
 
 ## Methodology & Architecture
 
 ### 1. Behavioural Classification (HMMs)
-Raw time-series GPS datasets are filtered for step lengths and turning angles. We fit multi-state **Hidden Markov Models (HMMs)** using `momentuHMM` (R) and `hmmlearn` (Python) to classify latent, unobserved cattle states into three discrete ecological categories:
-*   **Transit:** High step length, low turning angle.
-*   **Foraging:** Moderate step length, high turning angle.
-*   **Resting:** Low step length, random turning angle.
+Raw time-series GPS datasets are filtered for step lengths and turning angles. We fit multi-state **Hidden Markov Models (HMMs)** using `momentuHMM` (R) and `hmmlearn` (Python) to classify latent, unobserved cattle states into discrete ecological categories.
+
+A discrete-time Hidden Markov Model (HMM) pipeline was applied to isolate foraging states from resting and transit behaviours.
 
 ### 2. Environmental & Diurnal Drivers (GLMMs)
 Classified behavioural metrics are evaluated against time-series covariates (temperature, time of day) and geospatial attributes. We deployed **Generalised Linear Mixed Models (GLMMs)** via `glmmTMB` to identify shifts in activity patterns, evaluating diagnostics with simulated residuals to ensure robust stakeholder reporting.
+
+Generalised Linear Models (GLMs), Generalised Linear Mixed Models (GLMMs), and paddock-agnostic spatial grazing pressure metrics (metrics that do not account for variation in virtual fence structure), were used to map landscape usage across NVC communities.
 
 ### 3. Spatial Pipeline & Grazing Pressure Metrics
 Using `GeoPandas`, raw points are transformed into density matrices. Custom spatial aggregation functions isolate foraging-state locations to extract, calculate, and map spatial hotspots of high-intensity grazing pressure.
@@ -68,5 +67,5 @@ Using `GeoPandas`, raw points are transformed into density matrices. Custom spat
 ---
 
 ## Key Insights & Visualisations
-*   **Interactive Spatial Mapping:** The `notebooks/02_spatial_mapping.ipynb` file generates localised map layouts detailing exactly where livestock aggregate during critical foraging windows.
-*   **Stakeholder Analytics:** The `outputs/` directory provides pre-rendered statistical plots demonstrating how biological activity patterns adapt to local thermal conditions and vegetation density layouts.
+*   **Interactive Spatial Mapping:** The `R_Scripts/04_Predictive_Modelling.ipynb` file generates statistical plots demonstrate how livestock behaviour patterns adapt to local National Vegetation Classification (NVC) cummunitylayouts.
+*   **Stakeholder Analytics:** The `outputs/` directory provides localised map layouts detailing where livestock aggregate when exhibiting grazing behaviour.
