@@ -64,4 +64,4 @@ Behaviour state-labelled GPS points were transformed into custom grazing intensi
 
 ## Key Insights & Visualisations
 *   **Interactive Spatial Mapping:** The `R_Scripts/04_Predictive_Modelling.ipynb` file generates statistical plots demonstrate how livestock behaviour patterns adapt to local NVC cummunity layouts.
-*   **Stakeholder Analytics:** The `outputs/` directory provides localised map layouts detailing where livestock aggregate when exhibiting grazing behaviour.
+*   **Stakeholder Analytics:** The `Outputs/` directory provides localised map layouts detailing where livestock aggregate when exhibiting grazing behaviour.
