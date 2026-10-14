@@ -6,7 +6,6 @@
 [[QGIS]](https://qgis.org)
 
 ---
-
 ## Project Overview
 This repository contains the data science pipeline developed in partnership with the Norfolk Wildlife Trust. The project decodes raw GPS telemetry tracking data to identify hidden livestock behaviours and map fine-scale habitat selection patterns using these decoded livestock behaviours. 
 
