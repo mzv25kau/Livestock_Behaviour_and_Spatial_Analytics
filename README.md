@@ -34,13 +34,13 @@ The methodologies established here offer actionable geospatial information to la
 
 ## Methodology & Architecture
 
-### 1. Behavioural Classification (HMMs)
+### Behavioural Classification (HMMs)
 Raw time-series GPS datasets were cleaned and processed to extract cattle movement speeds and turning angles. Discrete-time **Hidden Markov Models (HMM)** pipelines were applied using `momentuHMM` (R) and `hmmlearn` (Python) to classify latent, unobserved cattle behaviour states into discrete ecological categories in order to isolate grazing behaviours.
 
-### 2. Predictive Modelling of Landcape Usage (GLMMs)
+### Predictive Modelling of Landcape Usage (GLMMs)
 Classified grazing behaviour metrics were evaluated against time-series covariates and geospatial attributes. We deployed **Generalised Linear Models (GLMs)**, and **Generalised Linear Mixed Models (GLMMs)** via `glmmTMB` to identify shifts in behaviour patterns across National Vegetation Classification (NVC) communities.
 
-### 3. Spatial Pipeline & Custom Grazing Pressure Metrics
+### Spatial Pipeline & Custom Grazing Pressure Metrics
 Behaviour state-labelled GPS points were transformed into custom grazing intensity metrics, used in tandem with predictive model outputs to highlight and map over/under-grazed areas contained within NVC communities.
 
 ---
