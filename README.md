@@ -1,4 +1,4 @@
-# Livestock Behaviour & Spatial Analytics: GPS Telemetry for Conservation
+# Livestock Behaviour & Spatial Analytics: GPS Telemetry for Conservation Management
 ### Stakeholder Collaboration | MSc Dissertation Project
 
 [[Python]](https://python.org)
